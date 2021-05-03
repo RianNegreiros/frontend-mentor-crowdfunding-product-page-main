@@ -25,29 +25,32 @@ p {
 
 h3 {
     font-weight: 700;
-    margin-bottom: 35px;
+    margin-bottom: 2.1875rem;
 }
 
 nav {
     display: flex;
     justify-content: space-between;
+    height: 25rem;
 }
 
 ul {
-    margin: 50px 160px;
+    margin: 3.125rem 10rem;
 }
 
 header {
     background-image: url(./images/image-hero-desktop.jpg);
     background-repeat: no-repeat;
-    height: 400px;
-    width: 1440px;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
 }
 
 main {
     position: absolute;
     top: 30%;
-    width: 750px;
+    max-width: 750px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -60,20 +63,21 @@ button {
 section {
     background: white;
     border-radius: 0.5rem;
-    width: 730px;
+    max-width: 730px;
+    width: 100%;
 }
 
 article {
-    padding: 45px 35px;
+    padding: 2.8125rem 2.1875rem;
     border: solid 1px lightgray;
-    border-radius: 10px;
+    border-radius: 0.625rem;
 }
 
 input[type="number"] {
     border-radius: 5rem;
     border: none;
-    height: 35px;
-    width: 50px;
+    height: 2.1875rem;
+    width: 3.125rem;
 }
 
 input[type="number"]:focus {
@@ -82,19 +86,19 @@ input[type="number"]:focus {
 
 label {
     font-weight: 700;
-    margin-left: 15px;
+    margin-left: 0.9375rem;
 }
 
 .webSiteName {
     font-weight: 700;
-    margin: 50px;
+    margin: 3.125rem;
     color: #fff;
 }
 
 .navAnchor {
     text-decoration: none;
     color: #fff;
-    margin-left: 25px;
+    margin-left: 1.5625rem;
 }
 
 .logo {
@@ -104,12 +108,12 @@ label {
 
 .firstSection {
     text-align: center;
-    padding: 60px 40px 50px 40px;
+    padding: 3.75rem 2.5rem 3.125rem 2.5rem;
 }
 
 .firstSection > p {
     color: var(--dark-gray);
-    margin: 25px 0px 40px 0px;
+    margin: 1.5625rem 0rem 2.5rem 0rem;
 }
 
 .firstSection-btn {
@@ -118,8 +122,8 @@ label {
 }
 
 .leftBtn {
-    height: 55px;
-    width: 200px;
+    height: 3.4375rem;
+    width: 12.5rem;
     background-color: var(--dark-cyan);
     color: white;
     border-radius: 5rem;
@@ -128,7 +132,7 @@ label {
 }
 
 .bookmarkSpan {
-    margin-left: 70px;
+    margin-left: 4.375rem;
     font-weight: 700;
     color: var(--dark-gray);
 }
@@ -139,8 +143,8 @@ label {
     border-radius: 5rem;
     border: none;
     background-color: lightgray;
-    width: 185px;
-    height: 55px;
+    width: 11.5625rem;
+    height: 3.4375rem;
 }
 
 .svg {
@@ -161,83 +165,83 @@ label {
     align-items: center;
     border-radius: 5rem;
     border: none;
-    width: 185px;
-    height: 55px;
+    width: 11.5625rem;
+    height: 3.4375rem;
     transition: 1s ease-out;
 }
 
 .secondSection {
-    margin: 30px 0;
-    padding: 60px 40px 50px 40px;
+    margin: 1.875rem 0rem;
+    padding: 3.75rem 2.5rem 3.125rem 2.5rem;
 }
 
 .projectNumbers {
     display: flex;
     flex-direction: row;
-    margin-bottom: 40px;
+    margin-bottom: 2.5rem;
 }
 
 .projectNumberP {
-    margin-top: 15px;
+    margin-top: 0.9375rem;
     text-align: initial;
 }
 
 .projectNumberH2 {
-    font-size: 45px;
+    font-size: 2.8125rem;
 }
 
 .numberSpan {
     font-weight: 700;
-    font-size: 55px;
+    font-size: 3.4375rem;
     color: var(--black);
 }
 
 .projectNumber-first {
-    padding-right: 40px;
+    padding-right: 2.5rem;
     border-right: 1px solid lightgray;
 }
 
 .projectNumber-middle {
-    width: 225px;
+    width: 14.0625rem;
     border-right: 1px solid lightgray;
-    margin-left: 40px;
+    margin-left: 2.5rem;
 }
 
 .projectNumber-last {
-    width: 275px;
-    margin-left: 40px;
+    width: 17.1875rem;
+    margin-left: 2.5rem;
 }
 
 .progressBar {
     background-color: lightgray;
-    width: 630px;
-    height: 15px;
-    border-radius: 20px;
+    width: 39.375rem;
+    height: 0.9375rem;
+    border-radius: 1.25rem;
 }
 
 .progress {
     height: 100%;
-    width: 500px;
-    border-radius: 20px;
+    width: 31.25rem;
+    border-radius: 1.25rem;
     background: var(--moderate-cyan);
     transition: 1s ease;
 }
 
 .lastSection {
-    padding: 45px 50px;
+    padding: 2.8125rem 3.125rem;
 }
 
 .lastSection > p {
-    margin-bottom: 40px;
+    margin-bottom: 2.5rem;
 }
 
 .modalExtraArticle {
-    margin-bottom: 30px;
+    margin-bottom: 1.875rem;
 }
 
 .articleBtn {
-    height: 55px;
-    width: 200px;
+    height: 3.4375rem;
+    width: 12.5rem;
     background-color: var(--moderate-cyan);
     color: white;
     border-radius: 5rem;
@@ -261,7 +265,7 @@ label {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-top: 35px;
+    margin-top: 2.1875rem;
 }
 
 .lastArticle {
@@ -278,7 +282,7 @@ label {
 }
 
 .secondArticle {
-    margin: 30px 0;
+    margin: 1.875rem 0;
 }
 
 
@@ -295,9 +299,9 @@ label {
 .modal {
     display: none;
     background-color: white;
-    width: 750px;
-    border-radius: 10px;
-    padding: 20px 50px 40px 50px;
+    width: 46.875rem;
+    border-radius: 0.625rem;
+    padding: 1.25rem 3.125rem 2.5rem 3.125rem;
 }
 
 .modalHeader {
@@ -307,18 +311,18 @@ label {
 }
 
 .modalHeader > img {
-    height: 15px;
+    height: 0.9375rem;
     cursor: pointer;
 }
 
 .modalP {
-    font-size: 15px;
-    margin-top: 10px;
+    font-size: 0.9375rem;
+    margin-top: 0.625rem;
 }
 
 .modalArticle {
-    margin-top: 15px;
-    padding: 15px 25px;
+    margin-top: 0.9375rem;
+    padding: 0.9375rem 1.5625rem;
 }
 
 .modalArticle4 {
@@ -338,21 +342,21 @@ label {
 .modalNumberSpan {
     color: var(--black);
     font-weight: 700;
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 
 .modalArticleAnchor {
     font-weight: 700;
     color: var(--moderate-cyan);
     text-decoration: none;
-    margin-left: 25px;
+    margin-left: 1.5625rem;
 }
 
 .modalArticleFooter {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-top: 15px;
+    margin-top: 0.9375rem;
 }
 
 .inputBtn {
@@ -363,8 +367,8 @@ label {
 }
 
 .inputBtn > button {
-    height: 40px;
-    width: 100px;
+    height: 2.5rem;
+    width: 6.875rem;
     background-color: var(--moderate-cyan);
     color: white;
     border-radius: 5rem;
@@ -376,12 +380,12 @@ label {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 20px;
-    height: 40px;
-    width: 100px;
+    margin-right: 1.25rem;
+    height: 2.5rem;
+    width: 6.875rem;
     border-radius: 5rem;
     border: 1px solid lightgray;
-    padding: 10px;
+    padding: 0.625rem;
 }
 
 .pledgeInputP {
@@ -393,8 +397,8 @@ label {
 }
 
 .inputRadio {
-    height: 20px;
-    width: 20px;
+    height: 1.25rem;
+    width: 1.25rem;
     border-radius: 50%;
     border: 1px solid lightgray;
     display: flex;
@@ -403,8 +407,8 @@ label {
 }
 
 .inputRadioCheckedSeleted1, .inputRadioCheckedSeleted2, .inputRadioCheckedSeleted3 {
-    height: 10px;
-    width: 10px;
+    height: 0.625rem;
+    width: 0.625rem;
     border-radius: 50%;
     background-color: var(--dark-cyan);
 }
@@ -433,19 +437,182 @@ label {
     justify-content: center;
     align-items: center;
     background-color: white;
-    width: 530px;
-    height: 450px;
-    border-radius: 10px;
-    padding: 20px 50px 40px 50px;
+    width: 100%;
+    max-width: 530px;
+    height: 100%;
+    max-height: 450px;
+    border-radius: 0.625rem;
+    padding: 1.25rem 3.125rem 2.5rem 3.125rem;
 }
 
 .modalThanks > p {
-    margin: 35px 0;
+    margin: 3.5rem 0rem;
     text-align: center;
 }
 
 .icon-check {
-    height: 90px;
-    width: 90px;
-    margin-bottom: 50px;
+    height: 5.625rem;
+    width: 5.625rem;
+    margin-bottom: 3.125rem;
+}
+
+@media (max-width: 375px) {
+    html {
+        font-size: 80%;
+    }
+
+    .navUl {
+        display: none;
+    }
+
+    .bookmarkSpan {
+        display: none;
+    }
+
+    .rightBtn {
+        position: absolute;
+        right: -5rem;
+        background: none;
+    }
+
+    .leftBtn {
+        width: 15rem;
+    }
+
+    .secondSection {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .projectNumbers {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .projectNumber {
+        margin: 0;
+        padding: 0;
+        width: 8.4375rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .projectNumberH2 {
+        font-size: 2rem;
+    }
+
+    .projectNumber-first {
+        border-right: none;
+        border-bottom: 1px solid lightgray;
+        margin-bottom: 1.9375rem;
+
+    }
+
+    .projectNumber-middle {
+        border-right: none;
+        border-bottom: 1px solid lightgray;
+        margin-bottom: 1.9375rem;
+    }
+
+    .projectNumber > p {
+        margin: 1.25rem 0 1.9375rem 0;
+        text-align: center;
+    }
+
+    .progressBar {
+        width: 17.1875rem;
+    }
+
+    .articleFooter {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .numberSpan {
+        font-size: 3rem;
+    }
+
+    .articleBtn {
+        margin-top: 1rem;
+    }
+
+    .hamburger-container {
+        height: 2rem;
+        width: 2rem;
+        background-image: url(./images/icon-hamburger.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: absolute;
+        right: 2rem;
+        top: 3.5em;
+    }
+
+    .navModal-container {
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        position: fixed;
+        background-color: rgba(0, 0, 0, 0.4);
+        height: 150vh;
+        width: 100vw;
+    }
+    
+    .navModal {
+        position: relative;
+        top: -25%;
+        background-color: white;
+        height: 20.75rem;
+        width: 90vw;
+        margin: 0rem auto;
+        border-radius: 0.625rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+    }
+    
+    .navModalAnchor {
+        display: inline;
+        color: var(--black);
+        font-weight: 500;
+        text-decoration: none;
+        font-size: 2rem;
+        border-bottom: 1px solid lightgray;
+        width: 100%;
+        padding: 2rem;
+    }
+
+    .navModalAnchorLast {
+        display: inline;
+        color: var(--black);
+        font-weight: 500;
+        text-decoration: none;
+        font-size: 2rem;
+        width: 100%;
+        padding: 1.5rem;
+    }
+
+    .closeNavModal {
+        height: 1.5rem;
+        width: 1.5rem;
+        margin-right: 3rem;
+    }
+
+    .navModalH2 {
+        font-size: 2rem;
+        font-weight: 700;
+        margin: 3.125rem;
+        color: #fff;
+    }
+
+    .navModalHeader {
+        position: relative;
+        top: -25%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
 }

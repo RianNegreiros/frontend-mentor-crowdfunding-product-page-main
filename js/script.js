@@ -1,6 +1,7 @@
 const bookmark = document.querySelector('.rightBtn')
 const circle = document.querySelector('circle')
 const path = document.querySelector('path')
+const webSiteName = document.querySelector('.webSiteName')
 
 const backProject = document.querySelector('.leftBtn')
 
@@ -45,6 +46,12 @@ const backersNumber = document.querySelector('.backersNumber')
 
 const totalBacked = document.querySelector('.totalBacked')
 const progress = document.querySelector('.progress')
+
+const hamburgerContainer = document.querySelector('.hamburger-container')
+const navModalContainer = document.querySelector('.navModal-container')
+
+const closeNavModal = document.querySelector('.closeNavModal')
+const navModalHeader = document.querySelector('.navModalHeader')
 
 bookmark.addEventListener('click', () =>
 bookmark.classList.toggle('rightBtnMarked')
@@ -129,6 +136,18 @@ btnContinue.forEach((button) => {
             backersNumber.innerHTML = insertAt(backersNumberToConvert.toString(), ',', 1)
         }
     })
+})
+
+hamburgerContainer.addEventListener('click', () => {
+    navModalContainer.style.display = 'flex'
+    webSiteName.style.display = 'none'
+    hamburgerContainer.style.display = 'none'
+})
+
+closeNavModal.addEventListener('click', () => {
+    navModalContainer.style.display = 'none'
+    webSiteName.style.display = 'flex'
+    hamburgerContainer.style.display = 'flex'
 })
 
 progress.style.width = parseInt(backedNumber.textContent.substr(1)) + '%'
