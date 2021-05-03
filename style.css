@@ -69,14 +69,14 @@ article {
     border-radius: 10px;
 }
 
-input[type="text"] {
+input[type="number"] {
     border-radius: 5rem;
     border: none;
     height: 35px;
     width: 50px;
 }
 
-input[type="text"]:focus {
+input[type="number"]:focus {
     outline: none;
 }
 
@@ -286,13 +286,14 @@ label {
     background-color: rgba(0, 0, 0, 0.4);
     height: 100vh;
     width: 100vw;
-    display: flex;
+    display: none;
     position: fixed;
     justify-content: center;
     align-items: center;
 }
 
 .modal {
+    display: none;
     background-color: white;
     width: 750px;
     border-radius: 10px;
@@ -387,6 +388,10 @@ label {
     margin: 0 5px 0 1px;
 }
 
+.inputError {
+    border: 1px solid red;
+}
+
 .inputRadio {
     height: 20px;
     width: 20px;
@@ -410,4 +415,37 @@ label {
 
 .modalArticleSelected {
     border: 3px solid var(--moderate-cyan);
+}
+
+.modalThanks-container {
+    background-color: rgba(0, 0, 0, 0.4);
+    height: 100vh;
+    width: 100vw;
+    display: none;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+}
+
+.modalThanks {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 530px;
+    height: 450px;
+    border-radius: 10px;
+    padding: 20px 50px 40px 50px;
+}
+
+.modalThanks > p {
+    margin: 35px 0;
+    text-align: center;
+}
+
+.icon-check {
+    height: 90px;
+    width: 90px;
+    margin-bottom: 50px;
 }

@@ -47,13 +47,13 @@
     <section class="secondSection">
       <div class="projectNumbers">
         <div class="projectNumber projectNumber-first">
-          <h2 class="projectNumberH2">$89,914</h2>
-          <p class="projectNumberP">of $100,000 backed</p>
+          <h2 class="projectNumberH2 backedNumber">$89,914</h2>
+          <p class="projectNumberP totalBacked">of $100,000 backed</p>
     
         </div>
 
         <div class="projectNumber-middle projectNumber">
-          <h2 class="projectNumberH2">5,007</h2>
+          <h2 class="projectNumberH2 backersNumber">5,007</h2>
           <p class="projectNumberP">total backers</p>
         </div>
 
@@ -90,8 +90,8 @@
           you’ll be added to a special Backer member list.
         </p>
         <div class="articleFooter">
-          <p><span class="numberSpan">101</span> left</p>
-          <button type="button" class="articleBtn">Select Reward</button>
+          <p><span class="numberSpan NumberSpan25">101</span> left</p>
+          <button type="button" class="articleBtn btnSelectReward1">Select Reward</button>
         </div>
       </article>
 
@@ -105,8 +105,8 @@
           member list. Shipping is included.
         </p>
         <div class="articleFooter">
-          <p><span class="numberSpan">64</span> left</p>
-          <button type="button" class="articleBtn">Select Reward</button>
+          <p><span class="numberSpan NumberSpan75">64</span> left</p>
+          <button type="button" class="articleBtn btnSelectReward2">Select Reward</button>
         </div>
       </article>
 
@@ -121,7 +121,7 @@
         </p>
         <div class="articleFooter">
           <p><span class="numberSpan">0</span> left</p>
-          <button type="button" class="articleBtn lastArticleBtn">Select Reward</button>
+          <button type="button" class="articleBtn lastArticleBtn btnSelectReward">Select Reward</button>
         </div>
       </article>
     </section>
@@ -143,7 +143,7 @@
         <article class="modalArticle modalArticle1">
           <div class="modalArticleHeader">
             <div class="modalArticleHeader2">
-              <div class="inputRadio"><div class="inputRadioCheck inputRadioChecked1"></div></div>
+              <div class="inputRadio inputRadio1"><div class="inputRadioCheck inputRadioChecked1"></div></div>
               <label for="noReward">Pledge with no reward</label>
             </div>
           </div>
@@ -157,10 +157,10 @@
             <div class="inputBtn">
               <div class="pledgeInput">
                 <p class="pledgeInputP">$</p>
-                <input type="text" name="pledgeInput" id="pledgeInput">
+                <input type="number" name="pledgeInput" id="pledgeInput" min="25">
               </div>
 
-              <button>Continue</button>
+              <button class="btnContinue">Continue</button>
             </div>
           </div>
         </article>
@@ -169,11 +169,11 @@
           <div>
             <div class="modalArticleHeader">
               <div class="modalArticleHeader2">
-                <div class="inputRadio"><div class="inputRadioCheck inputRadioChecked2"></div></div>
+                <div class="inputRadio inputRadio2"><div class="inputRadioCheck inputRadioChecked2"></div></div>
                 <label for="BambooStand">Bamboo Stand</label>
                 <a class="modalArticleAnchor" href="">Pledge $25 or more</a>
               </div>
-              <p><span class="modalNumberSpan">101</span> left</p>
+              <p><span class="modalNumberSpan NumberSpan25">101</span> left</p>
             </div>
           </div>
 
@@ -186,10 +186,10 @@
             <div class="inputBtn">
               <div class="pledgeInput">
                 <p class="pledgeInputP">$</p>
-                <input type="text" name="pledgeInput" id="pledgeInput">
+                <input type="number" name="pledgeInput" id="pledgeInput25" value="25" min="25">
               </div>
 
-              <button>Continue</button>
+              <button class="btnContinue">Continue</button>
             </div>
           </div>
         </article>
@@ -198,11 +198,11 @@
           <div>
             <div class="modalArticleHeader">
               <div class="modalArticleHeader2">
-                <div class="inputRadio"><div class="inputRadioCheck inputRadioChecked3"></div></div>
+                <div class="inputRadio inputRadio3"><div class="inputRadioCheck inputRadioChecked3"></div></div>
                 <label for="blackEditionStand">Black Edition Stand</label>
                 <a class="modalArticleAnchor" href="">Pledge $75 or more</a>
               </div>
-              <p><span class="modalNumberSpan">64</span> left</p>
+              <p><span class="modalNumberSpan NumberSpan75">64</span> left</p>
             </div>
           </div>
 
@@ -215,10 +215,10 @@
             <div class="inputBtn">
               <div class="pledgeInput">
                 <p class="pledgeInputP">$</p>
-                <input type="text" name="pledgeInput" id="pledgeInput">
+                <input type="number" name="pledgeInput " id="pledgeInput75" value="75" min="75">
               </div>
 
-              <button>Continue</button>
+              <button class="btnContinue">Continue</button>
             </div>
           </div>
         </article>
@@ -244,7 +244,19 @@
     </div>
    
   </div>
+
+  <div class="modalThanks-container">
+    <div class="modalThanks">
+      <img src="./images/icon-check.svg" alt="Check icon" class="icon-check">
+      <h2>Thanks for your support!</h2>
+      <p>Your pledge brings us one step closer to sharing Mastercraft
+        Bamboo Monitor Riser worldwide. You will get an email once
+        our cammpaign is completed.
+      </p>
+      <button class="close-modalThanks articleBtn">Goit it!</button>
+    </div>
+  </div>
   
-  <script src="./src/js/script.js"></script>
+  <script src="./js/script.js"></script>
 </body>
 </html>
