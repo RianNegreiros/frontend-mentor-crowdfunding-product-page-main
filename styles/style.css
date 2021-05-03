@@ -39,7 +39,7 @@ ul {
 }
 
 header {
-    background-image: url(./images/image-hero-desktop.jpg);
+    background-image: url(../images/image-hero-desktop.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 100%;
@@ -541,7 +541,7 @@ label {
     .hamburger-container {
         height: 2rem;
         width: 2rem;
-        background-image: url(./images/icon-hamburger.svg);
+        background-image: url(../images/icon-hamburger.svg);
         background-repeat: no-repeat;
         background-size: cover;
         position: absolute;
