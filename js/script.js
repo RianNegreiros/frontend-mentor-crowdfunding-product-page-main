@@ -38,6 +38,7 @@ const modalThanks = document.querySelector('.modalThanks')
 const NumberSpan75 = document.querySelectorAll('.NumberSpan75')
 const NumberSpan25 = document.querySelectorAll('.NumberSpan25')
 
+const pledgeInput = document.getElementById('pledgeInput').value
 const pledgeInput25 = document.getElementById('pledgeInput25').value
 const pledgeInput75 = document.getElementById('pledgeInput75').value
 
@@ -54,11 +55,11 @@ const closeNavModal = document.querySelector('.closeNavModal')
 const navModalHeader = document.querySelector('.navModalHeader')
 
 bookmark.addEventListener('click', () =>
-bookmark.classList.toggle('rightBtnMarked')
+    bookmark.classList.toggle('rightBtnMarked')
 )
 
 bookmark.addEventListener('click', () => {
-    if(bookmark.lastElementChild.innerHTML === 'Bookmark') {
+    if (bookmark.lastElementChild.innerHTML === 'Bookmark') {
         return bookmark.lastElementChild.innerHTML = 'Bookmarked'
     }
     return bookmark.lastElementChild.innerHTML = 'Bookmark'
@@ -114,26 +115,33 @@ closeModalThanks.addEventListener('click', () => {
     modalThanks.style.display = 'none'
 })
 
+
 btnContinue.forEach((button) => {
     button.addEventListener('click', () => {
         modal.style.display = 'none'
         modalContainer.style.display = 'none'
         modalThanksContainer.style.display = 'flex'
         modalThanks.style.display = 'flex'
-        if(button.parentElement.firstElementChild.lastElementChild.id === 'pledgeInput25') {
-            NumberSpan25.forEach((number) => number.innerHTML = parseInt(number.textContent) - 1)
-            const insertAt = (str, sub, pos) => `${str.slice(0, pos)}${sub}${str.slice(pos)}`
-            const number = parseFloat(backedNumber.textContent.substr(1).replace(/\,/g, '') ) + parseFloat(pledgeInput25)
-            backedNumber.innerHTML = insertAt(number.toString(), ',', 2)
-            const backersNumberToConvert = parseFloat(backersNumber.textContent.replace(/\,/g, '')) + 1
-            backersNumber.innerHTML = insertAt(backersNumberToConvert.toString(), ',', 1)
-        } else if (button.parentElement.firstElementChild.lastElementChild.id === 'pledgeInput75') {
-            NumberSpan75.forEach((number) => number.innerHTML = parseInt(number.textContent) - 1)
-            const insertAt = (str, sub, pos) => `${str.slice(0, pos)}${sub}${str.slice(pos)}`
-            const number = parseFloat(backedNumber.textContent.substr(1).replace(/\,/g, '') ) + parseFloat(pledgeInput75)
-            backedNumber.innerHTML = insertAt(number.toString(), ',', 2)
-            const backersNumberToConvert = parseFloat(backersNumber.textContent.replace(/\,/g, '')) + 1
-            backersNumber.innerHTML = insertAt(backersNumberToConvert.toString(), ',', 1)
+
+        switch (button.parentElement.firstElementChild.lastElementChild.id) {
+            case 'pledgeInput':
+                const newBackedNumber1 = parseInt(backedNumber.textContent.replace(',', '').substr(1)) + parseInt(pledgeInput)
+                const newBackersNumber1 = parseInt(backersNumber.textContent.replace(',', '')) + 1
+                backedNumber.innerHTML = `$${newBackedNumber1.toLocaleString()}`
+                backersNumber.innerHTML = newBackersNumber.toLocaleString()
+                break;
+            case 'pledgeInput25':
+                const newBackedNumber2 = parseInt(backedNumber.textContent.replace(',', '').substr(1)) + parseInt(pledgeInput25)
+                const newBackersNumber2 = parseInt(backersNumber.textContent.replace(',', '')) + 1
+                backedNumber.innerHTML = `$${newBackedNumber2.toLocaleString()}`
+                backersNumber.innerHTML = newBackersNumber2.toLocaleString()
+                break;
+            case 'pledgeInput75':
+                const newBackedNumber3 = parseInt(backedNumber.textContent.replace(',', '').substr(1)) + parseInt(pledgeInput75)
+                const newBackersNumber3 = parseInt(backersNumber.textContent.replace(',', '')) + 1
+                backedNumber.innerHTML = `$${newBackedNumber3.toLocaleString()}`
+                backersNumber.innerHTML = newBackersNumber3.toLocaleString()
+                break;
         }
     })
 })
@@ -150,4 +158,4 @@ closeNavModal.addEventListener('click', () => {
     hamburgerContainer.style.display = 'flex'
 })
 
-progress.style.width = parseInt(backedNumber.textContent.substr(1)) + '%'
+// progress.style.width = parseInt(backedNumber.textContent.substr(1)) + '%'
