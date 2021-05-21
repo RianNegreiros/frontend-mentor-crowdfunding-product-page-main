@@ -352,15 +352,8 @@ label {
     margin-left: 1.5625rem;
 }
 
-.modalArticleFooter1, .modalArticleFooter2, .modalArticleFooter3 {
+.modalArticleFooter {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-top: 0.9375rem;
-}
-
-.modalArticleFooterClose1, .modalArticleFooterClose2, .modalArticleFooterClose3 {
-    display: none;
     flex-direction: row;
     justify-content: space-between;
     margin-top: 0.9375rem;
@@ -418,6 +411,10 @@ label {
     width: 0.625rem;
     border-radius: 50%;
     background-color: var(--dark-cyan);
+}
+
+.modalArticleFooterClose1, .modalArticleFooterClose2, .modalArticleFooterClose3 {
+    display: none;
 }
 
 .modalArticleSelected {
@@ -478,15 +475,12 @@ label {
         background: none;
     }
 
-    .leftBtn {
-        width: 15rem;
-    }
-
     .secondSection {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
+    
     .projectNumbers {
         display: flex;
         flex-direction: column;
@@ -499,18 +493,12 @@ label {
         display: flex;
         flex-direction: column;
         align-items: center;
-
-    }
-
-    .projectNumberH2 {
-        font-size: 2rem;
     }
 
     .projectNumber-first {
         border-right: none;
         border-bottom: 1px solid lightgray;
         margin-bottom: 1.9375rem;
-
     }
 
     .projectNumber-middle {
@@ -532,11 +520,7 @@ label {
         display: flex;
         flex-direction: column;
     }
-
-    .numberSpan {
-        font-size: 3rem;
-    }
-
+    
     .articleBtn {
         margin-top: 1rem;
     }
