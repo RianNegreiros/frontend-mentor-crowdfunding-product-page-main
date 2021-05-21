@@ -352,8 +352,15 @@ label {
     margin-left: 1.5625rem;
 }
 
-.modalArticleFooter {
+.modalArticleFooter1, .modalArticleFooter2, .modalArticleFooter3 {
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 0.9375rem;
+}
+
+.modalArticleFooterClose1, .modalArticleFooterClose2, .modalArticleFooterClose3 {
+    display: none;
     flex-direction: row;
     justify-content: space-between;
     margin-top: 0.9375rem;
@@ -411,10 +418,6 @@ label {
     width: 0.625rem;
     border-radius: 50%;
     background-color: var(--dark-cyan);
-}
-
-.modalArticleFooterClose1, .modalArticleFooterClose2, .modalArticleFooterClose3 {
-    display: none;
 }
 
 .modalArticleSelected {

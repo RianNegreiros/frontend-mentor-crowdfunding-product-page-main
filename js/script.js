@@ -26,6 +26,10 @@ const modalArticle3 = document.querySelector('.modalArticle3')
 
 const btnContinue = document.querySelectorAll('.btnContinue')
 
+const modalArticleFooter1 = document.querySelector('.modalArticleFooter1')
+const modalArticleFooter2 = document.querySelector('.modalArticleFooter2')
+const modalArticleFooter3 = document.querySelector('.modalArticleFooter3')
+
 const modalArticleFooterClose1 = document.querySelector('.modalArticleFooterClose1')
 const modalArticleFooterClose2 = document.querySelector('.modalArticleFooterClose2')
 const modalArticleFooterClose3 = document.querySelector('.modalArticleFooterClose3')
@@ -67,21 +71,45 @@ bookmark.addEventListener('click', () => {
 
 inputRadio1.addEventListener('click', () => {
     inputRadioChecked1.classList.toggle('inputRadioCheckedSeleted1')
-    modalArticleFooterClose1.classList.toggle('modalArticleFooterClose1')
+    inputRadioChecked2.classList.remove('inputRadioCheckedSeleted2')
+    inputRadioChecked3.classList.remove('inputRadioCheckedSeleted3')
+
+    modalArticleFooter1.classList.toggle('modalArticleFooterClose1')
+    modalArticleFooter2.classList.add('modalArticleFooterClose2')
+    modalArticleFooter3.classList.add('modalArticleFooterClose3')
+
     modalArticle1.classList.toggle('modalArticleSelected')
+    modalArticle2.classList.remove('modalArticleSelected')
+    modalArticle3.classList.remove('modalArticleSelected')
 })
 
 inputRadio2.addEventListener('click', () => {
     inputRadioChecked2.classList.toggle('inputRadioCheckedSeleted2')
-    modalArticleFooterClose2.classList.toggle('modalArticleFooterClose2')
+    inputRadioChecked1.classList.remove('inputRadioCheckedSeleted1')
+    inputRadioChecked3.classList.remove('inputRadioCheckedSeleted3')
+
+    modalArticleFooter2.classList.toggle('modalArticleFooterClose2')
+    modalArticleFooter1.classList.add('modalArticleFooterClose1')
+    modalArticleFooter3.classList.add('modalArticleFooterClose3')
+
     modalArticle2.classList.toggle('modalArticleSelected')
+    modalArticle1.classList.remove('modalArticleSelected')
+    modalArticle3.classList.remove('modalArticleSelected')
 })
 
 
 inputRadio3.addEventListener('click', () => {
     inputRadioChecked3.classList.toggle('inputRadioCheckedSeleted3')
-    modalArticleFooterClose3.classList.toggle('modalArticleFooterClose3')
+    inputRadioChecked1.classList.remove('inputRadioCheckedSeleted1')
+    inputRadioChecked2.classList.remove('inputRadioCheckedSeleted2')
+
+    modalArticleFooter3.classList.toggle('modalArticleFooterClose3')
+    modalArticleFooter1.classList.add('modalArticleFooterClose1')
+    modalArticleFooter2.classList.add('modalArticleFooterClose2')
+
     modalArticle3.classList.toggle('modalArticleSelected')
+    modalArticle1.classList.remove('modalArticleSelected')
+    modalArticle2.classList.remove('modalArticleSelected')
 })
 
 closeModal.addEventListener('click', () => {
@@ -158,4 +186,4 @@ closeNavModal.addEventListener('click', () => {
     hamburgerContainer.style.display = 'flex'
 })
 
-// progress.style.width = parseInt(backedNumber.textContent.substr(1)) + '%'
+progress.style.width = parseInt(backedNumber.textContent.substr(1)) + '%'
