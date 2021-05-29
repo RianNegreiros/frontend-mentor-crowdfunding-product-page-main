@@ -42,7 +42,7 @@ const modalThanks = document.querySelector('.modalThanks')
 const NumberSpan75 = document.querySelectorAll('.NumberSpan75')
 const NumberSpan25 = document.querySelectorAll('.NumberSpan25')
 
-const pledgeInput = document.getElementById('pledgeInput').value
+const pledgeInput = document.getElementById('pledgeInputNoReward').value
 const pledgeInput25 = document.getElementById('pledgeInput25').value
 const pledgeInput75 = document.getElementById('pledgeInput75').value
 
@@ -152,23 +152,35 @@ btnContinue.forEach((button) => {
         modalThanks.style.display = 'flex'
 
         switch (button.parentElement.firstElementChild.lastElementChild.id) {
-            case 'pledgeInput':
+            case 'pledgeInputNoReward':
                 const newBackedNumber1 = parseInt(backedNumber.textContent.replace(',', '').substr(1)) + parseInt(pledgeInput)
                 const newBackersNumber1 = parseInt(backersNumber.textContent.replace(',', '')) + 1
                 backedNumber.innerHTML = `$${newBackedNumber1.toLocaleString()}`
-                backersNumber.innerHTML = newBackersNumber.toLocaleString()
+                backersNumber.innerHTML = newBackersNumber1.toLocaleString()
                 break;
             case 'pledgeInput25':
                 const newBackedNumber2 = parseInt(backedNumber.textContent.replace(',', '').substr(1)) + parseInt(pledgeInput25)
                 const newBackersNumber2 = parseInt(backersNumber.textContent.replace(',', '')) + 1
                 backedNumber.innerHTML = `$${newBackedNumber2.toLocaleString()}`
                 backersNumber.innerHTML = newBackersNumber2.toLocaleString()
+                NumberSpan25.forEach(
+                    function(number) {
+                        const value = parseInt(number.textContent) - 1
+                        return number.textContent = value.toString()
+                    }
+                )
                 break;
             case 'pledgeInput75':
                 const newBackedNumber3 = parseInt(backedNumber.textContent.replace(',', '').substr(1)) + parseInt(pledgeInput75)
                 const newBackersNumber3 = parseInt(backersNumber.textContent.replace(',', '')) + 1
                 backedNumber.innerHTML = `$${newBackedNumber3.toLocaleString()}`
                 backersNumber.innerHTML = newBackersNumber3.toLocaleString()
+                NumberSpan75.forEach(
+                    function(number) {
+                        const value = parseInt(number.textContent) - 1
+                        return number.textContent = value.toString()
+                    }
+                )
                 break;
         }
     })
