@@ -6,7 +6,7 @@
 
     --moderate-cyan: hsl(176, 50%, 47%);
     --dark-cyan: hsl(176, 72%, 28%);
-    
+
     --black: hsl(0, 0%, 0%);
     --dark-gray: hsl(0, 0%, 48%);
 }
@@ -35,13 +35,16 @@ nav {
 }
 
 ul {
-    margin: 3.125rem 10rem;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 3.125rem 10rem 0 10rem;
 }
 
 header {
     background-image: url(../images/image-hero-desktop.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     height: 100%;
     width: 100%;
 }
@@ -111,7 +114,7 @@ label {
     padding: 3.75rem 2.5rem 3.125rem 2.5rem;
 }
 
-.firstSection > p {
+.firstSection>p {
     color: var(--dark-gray);
     margin: 1.5625rem 0rem 2.5rem 0rem;
 }
@@ -151,11 +154,11 @@ label {
     position: absolute;
 }
 
-.rightBtnMarked > .svg > g > circle {
+.rightBtnMarked>.svg>g>circle {
     fill: var(--dark-cyan);
 }
 
-.rightBtnMarked > .svg > g > path {
+.rightBtnMarked>.svg>g>path {
     fill: white;
 }
 
@@ -177,8 +180,14 @@ label {
 
 .projectNumbers {
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
     margin-bottom: 2.5rem;
+}
+
+.projectNumber {
+    max-width: 10rem;
+    width: 100%;
+    margin: 0 auto;
 }
 
 .projectNumberP {
@@ -187,7 +196,7 @@ label {
 }
 
 .projectNumberH2 {
-    font-size: 2.8125rem;
+    font-size: 2rem;
 }
 
 .numberSpan {
@@ -197,24 +206,18 @@ label {
 }
 
 .projectNumber-first {
-    padding-right: 2.5rem;
     border-right: 1px solid lightgray;
 }
 
 .projectNumber-middle {
-    width: 14.0625rem;
     border-right: 1px solid lightgray;
-    margin-left: 2.5rem;
-}
-
-.projectNumber-last {
-    width: 17.1875rem;
-    margin-left: 2.5rem;
 }
 
 .progressBar {
     background-color: lightgray;
-    width: 39.375rem;
+    max-width: 39.375rem;
+    ;
+    width: 100%;
     height: 0.9375rem;
     border-radius: 1.25rem;
 }
@@ -231,7 +234,7 @@ label {
     padding: 2.8125rem 3.125rem;
 }
 
-.lastSection > p {
+.lastSection>p {
     margin-bottom: 2.5rem;
 }
 
@@ -285,7 +288,6 @@ label {
     margin: 1.875rem 0;
 }
 
-
 .modal-container {
     background-color: rgba(0, 0, 0, 0.4);
     height: 100vh;
@@ -304,13 +306,25 @@ label {
     padding: 1.25rem 3.125rem 2.5rem 3.125rem;
 }
 
+.closeModal {
+    background-image: url("../images/icon-close-modal.svg");
+    background-position: center;
+    width: 1rem;
+    height: 1rem;
+    cursor: pointer;
+}
+
+.closeModal > svg > path {
+    fill: darkgray;
+}
+
 .modalHeader {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-.modalHeader > img {
+.modalHeader>img {
     height: 0.9375rem;
     cursor: pointer;
 }
@@ -366,7 +380,7 @@ label {
     align-items: center;
 }
 
-.inputBtn > button {
+.inputBtn>button {
     height: 2.5rem;
     width: 6.875rem;
     background-color: var(--moderate-cyan);
@@ -406,14 +420,18 @@ label {
     align-items: center;
 }
 
-.inputRadioCheckedSeleted1, .inputRadioCheckedSeleted2, .inputRadioCheckedSeleted3 {
+.inputRadioCheckedSeleted1,
+.inputRadioCheckedSeleted2,
+.inputRadioCheckedSeleted3 {
     height: 0.625rem;
     width: 0.625rem;
     border-radius: 50%;
     background-color: var(--dark-cyan);
 }
 
-.modalArticleFooterClose1, .modalArticleFooterClose2, .modalArticleFooterClose3 {
+.modalArticleFooterClose1,
+.modalArticleFooterClose2,
+.modalArticleFooterClose3 {
     display: none;
 }
 
@@ -445,7 +463,7 @@ label {
     padding: 1.25rem 3.125rem 2.5rem 3.125rem;
 }
 
-.modalThanks > p {
+.modalThanks>p {
     margin: 3.5rem 0rem;
     text-align: center;
 }
@@ -456,13 +474,13 @@ label {
     margin-bottom: 3.125rem;
 }
 
-@media (max-width: 375px) {
+.navModal-container {
+    display: none;
+}
+
+@media (max-width: 425px) {
     html {
         font-size: 80%;
-    }
-
-    .navUl {
-        display: none;
     }
 
     .bookmarkSpan {
@@ -480,7 +498,7 @@ label {
         flex-direction: column;
         align-items: center;
     }
-    
+
     .projectNumbers {
         display: flex;
         flex-direction: column;
@@ -507,7 +525,7 @@ label {
         margin-bottom: 1.9375rem;
     }
 
-    .projectNumber > p {
+    .projectNumber>p {
         margin: 1.25rem 0 1.9375rem 0;
         text-align: center;
     }
@@ -520,20 +538,9 @@ label {
         display: flex;
         flex-direction: column;
     }
-    
+
     .articleBtn {
         margin-top: 1rem;
-    }
-
-    .hamburger-container {
-        height: 2rem;
-        width: 2rem;
-        background-image: url(../images/icon-hamburger.svg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        position: absolute;
-        right: 2rem;
-        top: 3.5em;
     }
 
     .navModal-container {
@@ -545,7 +552,7 @@ label {
         height: 150vh;
         width: 100vw;
     }
-    
+
     .navModal {
         position: relative;
         top: -25%;
@@ -559,7 +566,7 @@ label {
         justify-content: start;
         align-items: center;
     }
-    
+
     .navModalAnchor {
         display: inline;
         color: var(--black);
@@ -601,5 +608,22 @@ label {
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .navUl {
+        display: none;
+    }
+
+    .hamburger-container {
+        height: 2rem;
+        width: 2rem;
+        background-image: url(../images/icon-hamburger.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: absolute;
+        right: 2rem;
+        top: 3.5em;
     }
 }
