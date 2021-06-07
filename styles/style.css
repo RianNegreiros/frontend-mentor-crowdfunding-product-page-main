@@ -478,7 +478,7 @@ label {
     display: none;
 }
 
-@media (max-width: 425px) {
+@media (min-width: 425px) {
     html {
         font-size: 80%;
     }
