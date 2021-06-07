@@ -1,17 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+
   <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/styles/style.css">
-  
+
   <title>Frontend Mentor | Crowdfunding product page</title>
 
 </head>
+
 <body>
 
   <div class="hamburger-container">
@@ -29,14 +43,19 @@
   </header>
 
   <main>
-    <img src="./images//logo-mastercraft.svg" alt="Logo" class="logo">
+    <img src="./images/logo-mastercraft.svg" alt="Logo" class="logo">
     <section class="firstSection">
       <h1>Mastercraft Bamboo Monitor Riser</h1>
       <p>A beautiful & handcrafted mnitor stand to reduce neck and eye strain.</p>
       <div class="firstSection-btn">
         <button type="button" class="leftBtn">Back this project</button>
         <button type="button" class="rightBtn">
-          <svg width="56" height="56" class="svg" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><circle fill="#2F2F2F" cx="28" cy="28" r="28"/><path fill="#B1B1B1" d="M23 19v18l5-5.058L33 37V19z"/></g></svg>
+          <svg width="56" height="56" class="svg" xmlns="http://www.w3.org/2000/svg">
+            <g fill="none" fill-rule="evenodd">
+              <circle fill="#2F2F2F" cx="28" cy="28" r="28" />
+              <path fill="#B1B1B1" d="M23 19v18l5-5.058L33 37V19z" />
+            </g>
+          </svg>
           <span class="bookmarkSpan">Bookmark</span>
         </button>
       </div>
@@ -47,7 +66,7 @@
         <div class="projectNumber projectNumber-first">
           <h2 class="projectNumberH2 backedNumber">$89,914</h2>
           <p class="projectNumberP totalBacked">of $100,000 backed</p>
-    
+
         </div>
 
         <div class="projectNumber-middle projectNumber">
@@ -68,13 +87,13 @@
     <section class="lastSection">
       <h3>About this project</h3>
       <p>
-        The Mastercraft Bamboo Monitor Riser is a sturdy and stylish platform that elevates your screen 
-        to a more comfortable viewing height. Placing your monitor at eye level has the potential to improve 
+        The Mastercraft Bamboo Monitor Riser is a sturdy and stylish platform that elevates your screen
+        to a more comfortable viewing height. Placing your monitor at eye level has the potential to improve
         your posture and make you more comfortable while at work, helping you stay focused on the task at hand.
       </p>
-      
+
       <p>
-        Featuring artisan craftsmanship, the simplicity of design creates extra desk space below your computer 
+        Featuring artisan craftsmanship, the simplicity of design creates extra desk space below your computer
         to allow notepads, pens, and USB sticks to be stored under the stand.
       </p>
 
@@ -84,7 +103,7 @@
           <a class="articleAnchor" href="">Pledge $25 or more</a>
         </div>
         <p>
-          You get an ergonomic stand made of natural bamboo. You've helped us launch our promotional campaign, and 
+          You get an ergonomic stand made of natural bamboo. You've helped us launch our promotional campaign, and
           you’ll be added to a special Backer member list.
         </p>
         <div class="articleFooter">
@@ -99,7 +118,7 @@
           <a class="articleAnchor" href="">Pledge $75 or more</a>
         </div>
         <p>
-          You get a Black Special Edition computer stand and a personal thank you. You’ll be added to our Backer 
+          You get a Black Special Edition computer stand and a personal thank you. You’ll be added to our Backer
           member list. Shipping is included.
         </p>
         <div class="articleFooter">
@@ -114,7 +133,7 @@
           <a class="articleAnchor lastArticleAnchor" href="">Pledge $200 or more</a>
         </div>
         <p>
-          You get two Special Edition Mahogany stands, a Backer T-Shirt, and a personal thank you. You’ll be added 
+          You get two Special Edition Mahogany stands, a Backer T-Shirt, and a personal thank you. You’ll be added
           to our Backer member list. Shipping is included.
         </p>
         <div class="articleFooter">
@@ -131,116 +150,126 @@
     <div class="modal">
       <div class="modalHeader">
         <h1>Back this project</h1>
-        <img src="./images/icon-close-modal.svg" alt="Close Modal" class="closeModal">
+        <div class="closeModal">
+          <svg width="15" height="15" xmlns="http://www.w3.org/2000/svg"><path d="M11.314 0l2.828 2.828L9.9 7.071l4.243 4.243-2.828 2.828L7.07 9.9l-4.243 4.243L0 11.314 4.242 7.07 0 2.828 2.828 0l4.243 4.242L11.314 0z" fill="white" fill-rule="evenodd" opacity=".9"/></svg>
+        </div>
       </div>
 
-        <p class="modalP">
-          Want to support us in bringing Mastercraft Bamboo Monitor Riser out in the world?
-        </p>
+      <p class="modalP">
+        Want to support us in bringing Mastercraft Bamboo Monitor Riser out in the world?
+      </p>
 
-        <article class="modalArticle modalArticle1">
+      <article class="modalArticle modalArticle1">
+        <div class="modalArticleHeader">
+          <div class="modalArticleHeader2">
+            <div class="inputRadio inputRadio1">
+              <div class="inputRadioCheck inputRadioChecked1"></div>
+            </div>
+            <label for="noReward">Pledge with no reward</label>
+          </div>
+        </div>
+
+        <p class="modalP">
+          Choose to support us without a reward if you you simply belive in our project. As a
+          backer, you will be signed up to receive product updates via email.
+        </p>
+        <div class="modalArticleFooter1 modalArticleFooterClose1">
+          <p class="modalP">Enter you Pledge</p>
+          <div class="inputBtn">
+            <div class="pledgeInput">
+              <p class="pledgeInputP">$</p>
+              <input type="number" name="pledgeInput" id="pledgeInputNoReward">
+            </div>
+
+            <button class="btnContinue">Continue</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="modalArticle modalArticle2 modalArticleSeleted">
+        <div>
           <div class="modalArticleHeader">
             <div class="modalArticleHeader2">
-              <div class="inputRadio inputRadio1"><div class="inputRadioCheck inputRadioChecked1"></div></div>
-              <label for="noReward">Pledge with no reward</label>
-            </div>
-          </div>
-
-          <p class="modalP">
-            Choose to support us without a reward if you you simply belive in our project. As a
-            backer, you will be signed up to receive product updates via email.
-          </p>
-          <div class="modalArticleFooter1 modalArticleFooterClose1">
-            <p class="modalP">Enter you Pledge</p>
-            <div class="inputBtn">
-              <div class="pledgeInput">
-                <p class="pledgeInputP">$</p>
-                <input type="number" name="pledgeInput" id="pledgeInput" min="25">
+              <div class="inputRadio inputRadio2">
+                <div class="inputRadioCheck inputRadioChecked2"></div>
               </div>
-
-              <button class="btnContinue">Continue</button>
+              <label for="BambooStand">Bamboo Stand</label>
+              <a class="modalArticleAnchor" href="">Pledge $25 or more</a>
             </div>
+            <p><span class="modalNumberSpan NumberSpan25">101</span> left</p>
           </div>
-        </article>
+        </div>
 
-        <article class="modalArticle modalArticle2 modalArticleSeleted">
-          <div>
-            <div class="modalArticleHeader">
-              <div class="modalArticleHeader2">
-                <div class="inputRadio inputRadio2"><div class="inputRadioCheck inputRadioChecked2"></div></div>
-                <label for="BambooStand">Bamboo Stand</label>
-                <a class="modalArticleAnchor" href="">Pledge $25 or more</a>
+        <p class="modalP">
+          You get an ergonomic stand made of natural bamboo. You've helped us launch our promotional campaign, and
+          you’ll be added to a special Backer member list.
+        </p>
+        <div class="modalArticleFooter2 modalArticleFooterClose2">
+          <p class="modalP">Enter you Pledge</p>
+          <div class="inputBtn">
+            <div class="pledgeInput">
+              <p class="pledgeInputP">$</p>
+              <input type="number" name="pledgeInput" id="pledgeInput25" value="25" min="25">
+            </div>
+
+            <button class="btnContinue">Continue</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="modalArticle modalArticle3">
+        <div>
+          <div class="modalArticleHeader">
+            <div class="modalArticleHeader2">
+              <div class="inputRadio inputRadio3">
+                <div class="inputRadioCheck inputRadioChecked3"></div>
               </div>
-              <p><span class="modalNumberSpan NumberSpan25">101</span> left</p>
+              <label for="blackEditionStand">Black Edition Stand</label>
+              <a class="modalArticleAnchor" href="">Pledge $75 or more</a>
             </div>
+            <p><span class="modalNumberSpan NumberSpan75">64</span> left</p>
           </div>
+        </div>
 
-          <p class="modalP">
-            You get an ergonomic stand made of natural bamboo. You've helped us launch our promotional campaign, and 
-            you’ll be added to a special Backer member list.
-          </p>
-          <div class="modalArticleFooter2 modalArticleFooterClose2">
-            <p class="modalP">Enter you Pledge</p>
-            <div class="inputBtn">
-              <div class="pledgeInput">
-                <p class="pledgeInputP">$</p>
-                <input type="number" name="pledgeInput" id="pledgeInput25" value="25" min="25">
+        <p class="modalP">
+          You get a Black Special Edition computer stand and a personal thank you. You’ll be added to our Backer
+          member list. Shipping is included.
+        </p>
+        <div class="modalArticleFooter3 modalArticleFooterClose3">
+          <p class="modalP">Enter you Pledge</p>
+          <div class="inputBtn">
+            <div class="pledgeInput">
+              <p class="pledgeInputP">$</p>
+              <input type="number" name="pledgeInput " id="pledgeInput75" value="75" min="75">
+            </div>
+
+            <button class="btnContinue">Continue</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="modalArticle modalArticle4">
+        <div>
+          <div class="modalArticleHeader">
+            <div class="modalArticleHeader2">
+              <div class="inputRadio">
+                <div class="inputRadioCheck inputRadioChecked4"></div>
               </div>
-
-              <button class="btnContinue">Continue</button>
+              <label for="mahoganySpecialEdition">Mahogany Special Edition</label>
+              <a class="modalArticleAnchor" href="">Pledge $200 or more</a>
             </div>
+            <p><span class="modalNumberSpan">0</span> left</p>
           </div>
-        </article>
+        </div>
 
-        <article class="modalArticle modalArticle3">
-          <div>
-            <div class="modalArticleHeader">
-              <div class="modalArticleHeader2">
-                <div class="inputRadio inputRadio3"><div class="inputRadioCheck inputRadioChecked3"></div></div>
-                <label for="blackEditionStand">Black Edition Stand</label>
-                <a class="modalArticleAnchor" href="">Pledge $75 or more</a>
-              </div>
-              <p><span class="modalNumberSpan NumberSpan75">64</span> left</p>
-            </div>
-          </div>
-
-          <p class="modalP">
-            You get a Black Special Edition computer stand and a personal thank you. You’ll be added to our Backer 
-            member list. Shipping is included.
-          </p>
-          <div class="modalArticleFooter3 modalArticleFooterClose3">
-            <p class="modalP">Enter you Pledge</p>
-            <div class="inputBtn">
-              <div class="pledgeInput">
-                <p class="pledgeInputP">$</p>
-                <input type="number" name="pledgeInput " id="pledgeInput75" value="75" min="75">
-              </div>
-
-              <button class="btnContinue">Continue</button>
-            </div>
-          </div>
-        </article>
-
-        <article class="modalArticle modalArticle4">
-          <div>
-            <div class="modalArticleHeader">
-              <div class="modalArticleHeader2">
-                <div class="inputRadio"><div class="inputRadioCheck inputRadioChecked4"></div></div>
-                <label for="mahoganySpecialEdition">Mahogany Special Edition</label>
-                <a class="modalArticleAnchor" href="">Pledge $200 or more</a>
-              </div>
-              <p><span class="modalNumberSpan">0</span> left</p>
-            </div>
-          </div>
-
-          <p class="modalP">
-            You get two Special Edition Mahogany stands, a Backer T-Shirt, and a personal thank you. You’ll be added 
-            to our Backer member list. Shipping is included.
-          </p>
-        </article>
+        <p class="modalP">
+          You get two Special Edition Mahogany stands, a Backer T-Shirt, and a personal thank you. You’ll be added
+          to our Backer member list. Shipping is included.
+        </p>
+      </article>
 
     </div>
-   
+
   </div>
 
   <div class="modalThanks-container">
@@ -261,14 +290,15 @@
       <img src="./images/icon-close-modal.svg" alt="Close modal" class="closeNavModal">
     </div>
     <div class="navModal">
-        <a class="navModalAnchor" href="">About</a>
-        <hr>
-        <a class="navModalAnchor" href="">Discover</a>
-        <hr>
-        <a class="navModalAnchorLast" href="">Get Started</a>
+      <a class="navModalAnchor" href="">About</a>
+      <hr>
+      <a class="navModalAnchor" href="">Discover</a>
+      <hr>
+      <a class="navModalAnchorLast" href="">Get Started</a>
     </div>
   </div>
-  
+
   <script src="./js/script.js"></script>
 </body>
+
 </html>
