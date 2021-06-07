@@ -476,9 +476,72 @@ label {
 
 .navModal-container {
     display: none;
+    flex-direction: column;
+    justify-content: center;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.4);
+    height: 150vh;
+    width: 100vw;
 }
 
-@media (min-width: 425px) {
+.navModal {
+    position: relative;
+    top: -25%;
+    background-color: white;
+    height: 20.75rem;
+    width: 90vw;
+    margin: 0rem auto;
+    border-radius: 0.625rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.navModalAnchor {
+    display: inline;
+    color: var(--black);
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 2rem;
+    border-bottom: 1px solid lightgray;
+    width: 100%;
+    padding: 2rem;
+}
+
+.navModalAnchorLast {
+    display: inline;
+    color: var(--black);
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 2rem;
+    width: 100%;
+    padding: 1.5rem;
+}
+
+.closeNavModal {
+    height: 1.5rem;
+    width: 1.5rem;
+    margin-right: 3rem;
+}
+
+.navModalH2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 3.125rem;
+    color: #fff;
+}
+
+.navModalHeader {
+    position: relative;
+    top: -25%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (max-width: 425px) {
     html {
         font-size: 80%;
     }
@@ -541,73 +604,6 @@ label {
 
     .articleBtn {
         margin-top: 1rem;
-    }
-
-    .navModal-container {
-        display: none;
-        flex-direction: column;
-        justify-content: center;
-        position: fixed;
-        background-color: rgba(0, 0, 0, 0.4);
-        height: 150vh;
-        width: 100vw;
-    }
-
-    .navModal {
-        position: relative;
-        top: -25%;
-        background-color: white;
-        height: 20.75rem;
-        width: 90vw;
-        margin: 0rem auto;
-        border-radius: 0.625rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: start;
-        align-items: center;
-    }
-
-    .navModalAnchor {
-        display: inline;
-        color: var(--black);
-        font-weight: 500;
-        text-decoration: none;
-        font-size: 2rem;
-        border-bottom: 1px solid lightgray;
-        width: 100%;
-        padding: 2rem;
-    }
-
-    .navModalAnchorLast {
-        display: inline;
-        color: var(--black);
-        font-weight: 500;
-        text-decoration: none;
-        font-size: 2rem;
-        width: 100%;
-        padding: 1.5rem;
-    }
-
-    .closeNavModal {
-        height: 1.5rem;
-        width: 1.5rem;
-        margin-right: 3rem;
-    }
-
-    .navModalH2 {
-        font-size: 2rem;
-        font-weight: 700;
-        margin: 3.125rem;
-        color: #fff;
-    }
-
-    .navModalHeader {
-        position: relative;
-        top: -25%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
     }
 }
 
